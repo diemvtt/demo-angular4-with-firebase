@@ -1,0 +1,27 @@
+<div class="main-body">
+  <div class="container">
+    <div class="login-page">
+      <div class="row">
+        <div class="card col-md-4 col-md-offset-4">
+          <div class="login-card">
+            <div class="card-block">
+              <form class="text-center">
+                <h3>Login Form</h3>
+                 
+                <span class="error" *ngIf="error">{{ error }}</span>
+                <div class="form-group">
+
+                    <button class="btn btn-primary btn-block" routerLink="/login-email" id="email">
+                      Login with Email
+                    </button>
+                </div>
+
+                <a routerLink="/signup" routerLinkActive="active">No account? <strong>Create one here</strong></a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
